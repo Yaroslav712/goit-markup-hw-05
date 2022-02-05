@@ -89,6 +89,9 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--header-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-header-email,
@@ -114,6 +117,17 @@ body {
 }
 .link-current {
   color: var(--accent-color);
+  position: relative;
+}
+.link-current::after {
+  content: '';
+  width: 100%;
+  height: 4px;
+  background: #2196f3;
+  border-radius: 2px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
 }
 .list-contacts {
   font-weight: 500;
@@ -131,15 +145,10 @@ body {
 .header-icon {
   fill: #757575;
   margin-right: 10px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-/*.header-tel 
-{
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: #757575;
-}*/
 
 .section-title {
   background-color: #2f303a;
@@ -188,6 +197,9 @@ body {
   color: #ffffff;
   cursor: pointer;
   background-color: var(--accent-color);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-btn:hover,
 .header-btn:focus {
@@ -331,21 +343,11 @@ img {
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
   color: #ffffff;
-  animation-name: rotator;
-  animation-duration: 1000ms;
+  transition-property: backround;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@keyframes rotator {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-/*.about-item-list:hover {
-  transform: skewX(50deg);
-}*/
 /*------------------------Section(Наша команда)------------------------*/
 .heroes {
   margin-top: 0px;
@@ -434,9 +436,15 @@ img {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .masters-social-icon {
   fill: #afb1b8;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .masters-social-link:hover,
 .masters-social-link:focus {
@@ -486,6 +494,9 @@ img {
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .regular-costomers-item + .regular-costomers-item {
@@ -493,6 +504,9 @@ img {
 }
 .regular-costomers-icon {
   fill: #afb1b8;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .regular-costomers-link:hover,
 .regular-costomers-link:focus {
@@ -550,16 +564,21 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--first-title-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-mailto,
 .footer-tel {
   margin: 0px;
-
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-mailto:hover,
@@ -604,6 +623,9 @@ img {
   align-items: center;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
+  transition-property: background;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-footer-item + .social-footer-item {
   margin-left: 10px;
@@ -653,6 +675,9 @@ img {
   letter-spacing: 0.03em;
   color: #212121;
   cursor: pointer;
+  transition-property: color, background-color, box-sizing, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
@@ -663,12 +688,12 @@ img {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-/*-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;-/*
 /*------------------------Список инструментов------------------------*/
 .nav-tool-portfolio {
   display: block;
+  transition-property: box-sizing, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-tool-portfolio:hover,
 .nav-tool-portfolio:focus {
@@ -694,6 +719,9 @@ img {
   background: #ffffff;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
+  transition-property: box-sizing, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list-tool-portfolio:nth-last-child(-n + 3) {
   margin-bottom: 0px;
@@ -701,9 +729,41 @@ img {
 .list-tool-portfolio:nth-child(3n) {
   margin-right: 0px;
 }
-
+.list-tool-portfolio:hover .masters-img-text {
+  transform: translateY(0%);
+}
+.list-tool-portfolio:hover,
+.list-tool-portfolio:focus {
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .nav-tool-portfolio {
   display: block;
+}
+.masters-item-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.masters-img-text {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+  padding-top: 63px;
+  padding-bottom: 63px;
+  padding-left: 24px;
+  padding-right: 24px;
+  height: 100%;
+  background: rgba(33, 150, 243, 0.9);
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  transform: translateY(100%);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .div-portfolio-list {
   padding-left: 24px;
@@ -746,4 +806,74 @@ html {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+/*------------------------Moдальное окно------------------------*/
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+
+  transition: opacity 250ms, visibility 250ms;
+}
+.backdrop.is-hidden .modal {
+  transform: scale(0.5);
+}
+.modal {
+  width: 528px;
+  height: 581px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 500ms;
+}
+.modal-close {
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-close-link {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.modal-close:hover,
+.modal-close:focus {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.modal-close-icon {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close:hover .modal-close-icon {
+  fill: #188ce8;
 }
