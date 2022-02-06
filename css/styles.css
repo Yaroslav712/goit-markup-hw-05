@@ -852,13 +852,7 @@ html {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-close-link {
-  width: 30px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 .is-hidden {
   opacity: 0;
   pointer-events: none;
